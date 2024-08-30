@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Removed the blinkCaret animation */
+
+.typewriter-container {
+  width: 100%; /* Set a fixed width for the text container */
+  margin: 0 auto;
+}
+
+.typewriter {
+  overflow: hidden;
+  /* Removed the border-right property */
+  white-space: normal;
+  letter-spacing: .15em;
+  animation: 
+    typewriter 4s steps(30, end) 1s 1 normal both;
+  width: 100%; /* Makes sure the text fills the container */
+}
