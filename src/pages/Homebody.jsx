@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Homebody() {
 
   return (
-    <div className='flex flex-col bg-slate-900 opacity-80 w-full lg:w-3/4 h-full mx-auto justify-between items-center'>
+    <div className='flex flex-col bg-slate-900 opacity-100 w-full lg:w-3/4 h-full mx-auto justify-between items-center'>
       <div className='flex flex-col justify-between items-center'>
         <div>
           <img

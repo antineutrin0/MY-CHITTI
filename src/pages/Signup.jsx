@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaGoogle, FaGithub, FaFacebook } from 'react-icons/fa';
 
 const Signup = () => {
+  const [formdata,setformdata]=useState({
+    name:'',
+    email:'',
+    password:''
+  })
+
+   function handlesignup(e){
+     
+   }
+
   return (
     <div className="w-full lg:w-1/2 h-full lg:h-screen mx-auto mt-8 lg:mt-12 flex flex-col lg:flex-row items-center justify-center rounded-lg shadow-lg overflow-hidden bg-slate-600">
       
@@ -9,7 +19,7 @@ const Signup = () => {
       <div className="w-full lg:w-1/2 p-4 lg:p-8 bg-slate-600">
         <h2 className="text-2xl lg:text-3xl font-bold mb-6 text-center text-gray-100">Signup</h2>
         
-        <form>
+        <form onSubmit={handlesignup}>
           <div className="mb-4">
             <label className="block text-gray-100 text-sm font-bold mb-2" htmlFor="email">
               Email
@@ -17,7 +27,7 @@ const Signup = () => {
             <input
               id="email"
               type="email"
-              placeholder="Enter your email"
+              placeholder="Enter yol ,ur email"
               className="w-full p-3 border rounded-lg bg-white focus:outline-none focus:border-blue-500"
             />
           </div>
